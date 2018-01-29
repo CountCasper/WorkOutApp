@@ -1,4 +1,33 @@
-
+import java.util.Arrays;
+import java.util.Random;
 public class Workout {
-
+	private Layout[] work;
+	private int numOfRounds;
+	public Workout(){
+		Random rand = new Random();
+		this.numOfRounds = rand.nextInt(3) + 1;
+		this.work = new Layout[numOfRounds];
+		
+		for (int i=0; i<numOfRounds; i++){
+			//this will be different because of inheritence;
+			work[i]= new Layout();
+		}
+	}
+	public Layout[] getWork() {
+		return work;
+	}
+	public void setWork(Layout[] work) {
+		this.work = work;
+	}
+	public int getNumOfRounds() {
+		return numOfRounds;
+	}
+	public void setNumOfRounds(int numOfRounds) {
+		this.numOfRounds = numOfRounds;
+	}
+	@Override
+	public String toString() {
+		return "Workout [work=" + Arrays.toString(work) + ", nnumOfRounds=" + numOfRounds + "]";
+	}
+	
 }

@@ -1,4 +1,23 @@
-
+//this is a super class
 public class Layout {
+	private Reps rep;
 
+	public Layout() {
+		
+		this.rep = new Reps();
+	}
+
+	public Reps getRep() {
+		return rep;
+	}
+
+	public void setRep(Reps rep) {
+		this.rep = rep;
+	}
+
+	@Override
+	public String toString() {
+		return "\nLayout [rep=" + rep + "]";
+	}
+	
 }
