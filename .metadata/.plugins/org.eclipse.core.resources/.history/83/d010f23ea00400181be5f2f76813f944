@@ -1,0 +1,68 @@
+import java.util.Random;
+public class Movement {
+	private static String[] disciplines = {"Cardio","Gymnastic","Dumbbell","Kettel bell","Olimpic Lifting","Power Lifting","StrongMan"};
+	private static String[] cardioTypes = {"Run"};
+	private static String[] gymnasticTypes = {"Ring Muscle ups"};
+	private static String[] dumbellTypes = {"Dumbell Thrusters"};
+	private static String[] KettelBellTypes = {"Snatch"};
+	private static String[] olimpicLiftTypes = {"Snatch"};
+	private static String[] powerLiftTypes = {"DeadLift"};
+	private static String[] strongManTypes = {"Farmer Carry"};
+	
+	private int set;
+	private int dist;
+	private int weight;
+	
+	private String chosenDis;
+	private String chosenMove;
+	public Movement(){
+		Random rand = new Random();
+		Random rand2 = new Random();
+		
+		this.numMoves = rand.nextInt(10) + 1;
+		
+		this.chosenDis = disciplines[rand.nextInt(disciplines.length)];
+		
+		
+		
+	}
+	
+	private
+	
+	public int getSet() {
+		return set;
+	}
+	public void setSet(int set) {
+		this.set = set;
+	}
+	public int getDist() {
+		return dist;
+	}
+	public void setDist(int dist) {
+		this.dist = dist;
+	}
+	public int getWeight() {
+		return weight;
+	}
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+	public String getChosenDis() {
+		return chosenDis;
+	}
+	public void setChosenDis(String chosenDis) {
+		this.chosenDis = chosenDis;
+	}
+	public String getChosenMove() {
+		return chosenMove;
+	}
+	public void setChosenMove(String chosenMove) {
+		this.chosenMove = chosenMove;
+	}
+	@Override
+	public String toString() {
+		return "Movement [set=" + set + ", dist=" + dist + ", weight=" + weight + ", chosenDis=" + chosenDis
+				+ ", chosenMove=" + chosenMove + "]";
+	}
+
+}

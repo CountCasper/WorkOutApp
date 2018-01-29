@@ -1,0 +1,22 @@
+
+public class Movement {
+	private static String[] disciplines = {"Cardio","Gymnastic","Dumbbell","Kettel bell","Olimpic Lifting","Power Lifting","StrongMan"};
+	private static String[] cardioTypes = {"Run"};
+	private static String[] gymnasticTypes = {"Ring Muscle ups"};
+	private static String[] dumbellTypes = {"Dumbell Thrusters"};
+	private static String[] KettelBellTypes = {"Snatch"};
+	private static String[] olimpicLiftTypes = {"Snatch"};
+	private static String[] powerLiftTypes = {"DeadLift"};
+	private static String[] strongManTypes = {"Farmer Carry"};
+	
+	private int set;
+	private int dist;
+	private int weight;
+	
+	private String chosenDis;
+	public Movement(){
+		
+		
+	}
+	
+}

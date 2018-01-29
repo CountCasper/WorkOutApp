@@ -1,0 +1,5 @@
+//this is a super class
+public class Layout {
+	private Reps rep;
+	
+}
