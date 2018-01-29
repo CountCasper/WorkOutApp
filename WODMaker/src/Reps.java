@@ -5,18 +5,18 @@ public class Reps {
 	private int Rep;
 	private Movement[] moves;
 	private int numMoves;
-	
+
 	public Reps(){
 		Random rand = new Random();
-		Random rand2 = new Random();
+		
 		this.Rep = rand.nextInt(3) + 1;
 		this.numMoves = rand.nextInt(10) + 1;
 		this.moves = new Movement[numMoves];;
-		
+
 		for (int i=0; i<numMoves; i++){
 			moves[i]= new Movement();
 		}
-		
+
 	}
 	public int getRep() {
 		return Rep;
@@ -40,5 +40,5 @@ public class Reps {
 	public String toString() {
 		return "Reps [Rep=" + Rep + ", moves=" + Arrays.toString(moves) + ", numMoves=" + numMoves + "]";
 	}
-	
+
 }
